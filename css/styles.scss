@@ -3,12 +3,16 @@ $secondary-color: white;
 $bgcolor:#abd2d5;
 $large-width:1000px;
 
-body{
+html, body{
+	overflow-x: hidden;
 	padding:0;
 	margin:0;
 	font-family: 'Quicksand', sans-serif;
 }
 
+body {
+  position: relative
+}
 
 
 /*TOP CONTAINER*/
@@ -124,7 +128,7 @@ body{
 }
 
 .nav-bottom .container{
-	padding:5px;
+	margin:10px;
 }
 .nav-bottom ul{
 	text-decoration: none;
@@ -136,7 +140,7 @@ body{
 .nav-bottom i {
 	color:$bgcolor;
 	font-size:30px;
-	margin:15px;
+	margin: 10px 15px;
 }
 
 
