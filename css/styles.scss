@@ -3,6 +3,10 @@ $secondary-color: white;
 $bgcolor:#abd2d5;
 $large-width:1000px;
 
+::-webkit-scrollbar {
+display: none;
+}
+
 html, body{
 	overflow-x: hidden;
 	padding:0;
@@ -110,7 +114,7 @@ body {
 	flex: 1;
 }	
 .conB .photo{
-		min-width:450px;
+		width:450px;
 		min-height:450px;
 		background-position: center;
 		background-size: cover;
