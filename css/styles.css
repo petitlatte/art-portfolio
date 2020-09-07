@@ -1,3 +1,4 @@
+/*Side scroll issue - fixed*/
 ::-webkit-scrollbar {
   display: none; }
 
@@ -78,13 +79,26 @@ body {
   align-items: center;
   justify-content: center; }
 
-.conB article {
+.conB .container {
   display: flex;
-  flex: 1; }
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 20px auto; }
+
+.conB article {
+  flex: 1 1 400px;
+  display: flex; }
+
+.conB a {
+  position: relative;
+  flex: 1;
+  margin: 15px;
+  margin-top: 0;
+  display: block;
+  text-decoration: none; }
 
 .conB .photo {
-  width: 450px;
-  min-height: 450px;
+  min-height: 300px;
   background-position: center;
   background-size: cover; }
 
@@ -126,19 +140,10 @@ body {
     display: block !important; }
 
   .toggle-button {
-    display: none; }
-
-  .conB .container {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1400px;
-    margin: 10px auto; }
-
+    display: none; } }
+@media (min-width: 1000px) {
   .conB article {
-    flex: 1 1 25%;
-    margin: 5px; }
-
-  /*Need to fix 2 column css*/ }
+    flex: 1 1 25%; } }
 /*END OF MEDIA QUERIES*/
 
 /*# sourceMappingURL=styles.css.map */
