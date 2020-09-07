@@ -1,0 +1,137 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Quicksand', sans-serif; }
+
+/*TOP CONTAINER*/
+.conA {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  min-height: 450px;
+  text-align: center;
+  color: #abd2d5; }
+
+.conA h1 {
+  font-size: 40px; }
+
+.conA .icon {
+  height: 200px;
+  border-radius: 50%; }
+
+.conA .icon:hover {
+  cursor: pointer; }
+
+/*NAVIGATION BAR*/
+.nav-top {
+  display: none;
+  background-color: #abd2d5; }
+
+.nav-top ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.nav-top a {
+  display: block;
+  padding: 15px;
+  color: inherit;
+  font-size: 18px;
+  text-decoration: none; }
+
+.nav-top a:hover {
+  background-color: #333333;
+  color: white; }
+
+.nav-bottom ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+/*TOGGLE BUTTON*/
+.container-small {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; }
+
+.toggle-button {
+  margin: 15px;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 36px;
+  cursor: pointer;
+  color: #abd2d5; }
+
+/*GALLERY*/
+.conB {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.conB article {
+  display: flex;
+  flex: 1; }
+
+.conB .photo {
+  min-width: 450px;
+  min-height: 450px;
+  background-position: center;
+  background-size: cover; }
+
+/*Footer*/
+.nav-bottom {
+  position: fixed;
+  background-color: white;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
+.nav-bottom .container {
+  padding: 5px; }
+
+.nav-bottom ul {
+  text-decoration: none;
+  display: flex;
+  justify-content: center; }
+
+.nav-bottom i {
+  color: #abd2d5;
+  font-size: 30px;
+  margin: 15px; }
+
+/*RESPONSIVE FOR DESKTOP*/
+@media (min-width: 768px) {
+  .conA {
+    height: 40vh; }
+
+  .conB .container {
+    display: flex;
+    max-width: 1200px; }
+
+  .nav-top ul {
+    display: flex;
+    justify-content: center; }
+
+  .nav-top {
+    display: block !important; }
+
+  .toggle-button {
+    display: none; }
+
+  .conB .container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 10px auto; }
+
+  .conB article {
+    flex: 1 1 25%;
+    margin: 5px; }
+
+  /*Need to fix 2 column css*/ }
+/*END OF MEDIA QUERIES*/
+
+/*# sourceMappingURL=styles.css.map */
