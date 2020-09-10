@@ -65,6 +65,4 @@ grunt.initConfig({
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-jshint');
 
-    grunt.loadNpmTasks('@fortawesome/fontawesome-free');
-
 };

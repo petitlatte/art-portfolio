@@ -144,6 +144,19 @@ p{
 .conC .container,.conD .container,.conE .container{
 	margin:20px;
 }
+
+
+.conD .shop-banner{
+	width:100vw;
+	display:block;
+	margin: 0 auto;
+} 
+
+.conD .shop-banner:hover{
+cursor:pointer;
+opacity:0.7;
+transition: 1s ease;
+}
 /*Footer*/
 
 .nav-bottom{
@@ -195,6 +208,11 @@ p{
 	.toggle-button {
 		display:none;
 	}
+
+	.conD .shop-banner{
+		width:100%;
+	}
+
 
 }
 
